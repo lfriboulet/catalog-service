@@ -15,7 +15,7 @@ public class BookJsonTests {
     @Autowired
     private JacksonTester<Book> json;
 
-    @Test
+   @Test
     void testSerialize() throws Exception {
         var book = new Book(394L, "1234567890", "Title", "Author", 9.90, "polarshop", Instant.now(), Instant.now(), 21 );
         var jsonContent = json.write(book);
@@ -37,7 +37,7 @@ public class BookJsonTests {
                 .isEqualTo(book.version());
     }
 
-    @Test
+   @Test
     void testDeserialize() throws Exception {
 
         var instant = Instant.parse("2021-09-07T22:50:37.135029Z");
