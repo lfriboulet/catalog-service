@@ -123,8 +123,8 @@
                             <username>${docker.publishRegistry.username}</username>
                             <password>${docker.publishRegistry.password}</password>
                         </publishRegistry>
-                        <imageName>${module.image.name}</imageName>
                     </docker>
+                    <imageName>${module.image.name}</imageName>
                 </configuration>
             </plugin>
         </plugins>
