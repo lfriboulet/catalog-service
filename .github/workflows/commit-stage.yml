@@ -61,7 +61,7 @@ jobs:
           chmod +x mvnw
           ./mvnw spring-boot:build-image \
           -Ddocker.publishRegistry.username="lfriboulet" \
-          -Ddocker.publishRegistry.password="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" \
+          -Ddocker.publishRegistry.password="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" \
           -Ddocker.publishRegistry.url="ghcr.io" \
           -Dspring-boot.build-image.publish=true \
           -Dspring-boot.build-image.imageName="ghcr.io/lfriboulet/catalog-service"
