@@ -124,7 +124,6 @@
                             <password>${docker.publishRegistry.password}</password>
                         </publishRegistry>
                     </docker>
-                    <imageName>${module.image.name}</imageName>
                 </configuration>
             </plugin>
         </plugins>
