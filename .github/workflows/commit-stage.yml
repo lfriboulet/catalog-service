@@ -60,11 +60,7 @@ jobs:
         run: |
           chmod +x mvnw
           ./mvnw spring-boot:build-image \
-          -Ddocker.publishRegistry.username="lfriboulet" \
-          -Ddocker.publishRegistry.password="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" \
-          -Ddocker.publishRegistry.url="ghcr.io" \
-          -Dspring-boot.build-image.publish=true \
-          -Dspring-boot.build-image.imageName="ghcr.io/lfriboulet/catalog-service"
+          -Dspring-boot.build-image.imageName=${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ env.VERSION }}
       - name: OCI image vulnerability scanning
         uses: anchore/scan-action@v3
         id: scan
