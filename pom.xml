@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.polarbookshop</groupId>
     <artifactId>catalog-service</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>latest</version>
     <name>catalog-service</name>
     <description>Manages the books in the catalog.</description>
     <url/>
@@ -32,7 +32,6 @@
         <docker.publishRegistry.username>lfriboulet</docker.publishRegistry.username>
         <docker.publishRegistry.url>ghcr.io</docker.publishRegistry.url>
         <docker.publishRegistry.password>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</docker.publishRegistry.password>
-        <module.image.name>${project.name}</module.image.name>
     </properties>
     <dependencies>
         <dependency>
