@@ -31,7 +31,7 @@ public class BookController {
         return bookService.addBookToCatalog(book);
     }
 
-    @DeleteMapping
+    @DeleteMapping("{isbn}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void delete(@PathVariable String isbn) {
         bookService.removeBookFromCatalog(isbn);

@@ -39,12 +39,15 @@ public class BookService {
                             book.title(),
                             book.author(),
                             book.price(),
-                            "polarshop",
+                            book.publisher(),
                             existingBook.createdDate(),
                             existingBook.lastModifiedDate(),
+                            existingBook.createdBy(),
+                            existingBook.lastModifiedBy(),
                             existingBook.version());
                     return bookRepository.save(bookToUpdate);
                 })
                 .orElseGet(() -> addBookToCatalog(book));
     }
+
 }
